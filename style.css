@@ -2,13 +2,11 @@ body {
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
   display: flex;
   justify-content: center;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .title {
@@ -17,8 +15,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .text {
@@ -26,8 +23,6 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -36,10 +31,9 @@ button {
 }
 
 .main-button {
-  border: 1px solid #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0);
   width: 171px;
   height: 50px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -48,38 +42,34 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-
+  color: rgb(255, 255, 255);
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
 }
 .main-button:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 10px;
-  background: rgba(255, 0, 0, 0);
+  background: rgba(255, 255, 255, 0);
 }
 
 .standard-button {
-  border: 1px solid #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .standard-button:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 10px;
   background: rgba(255, 0, 0, 0);
@@ -136,9 +126,7 @@ li:hover {
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
-  /* identical to box height */
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .color-logo {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
@@ -149,11 +137,9 @@ li:hover {
 .begin-header-container {
   width: 384px;
   height: 50px;
-
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  color: white;
-
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -179,23 +165,18 @@ li:hover {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-
   color: rgba(255, 255, 255, 0.5);
 }
 
 .begin-header-navigation {
   margin: 10px;
   width: 520px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-
-  color: #ffffff;
-
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,14 +198,11 @@ li:hover {
 .begin-slogan {
   width: 490px;
   height: 180px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-  line-height: 120%;
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .begin-body-container-button {
   display: flex;
