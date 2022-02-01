@@ -9,6 +9,8 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/*   ------------------------СТИЛИ ЗАГОЛОВКОВ, ОБЩИХ КНОПОК, ССЫЛОК И ПР------------------------           */
+
 p {
   margin: 0;
   font-family: Poppins;
@@ -59,7 +61,7 @@ h2 {
   width: 100%;
   height: 120px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -95,6 +97,7 @@ button {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
 }
+
 .main-button:hover {
   border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
@@ -117,9 +120,9 @@ button {
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
+
 .standard-button:hover {
   border: 1px solid rgb(255, 255, 255);
-
   box-sizing: border-box;
   border-radius: 10px;
   background: rgba(255, 0, 0, 0);
@@ -152,8 +155,10 @@ li:hover {
   -webkit-text-fill-color: transparent;
 }
 
+/*   ------------------------НАЧАЛО ПЕРСОНАЛЬНЫХ СТИЛЕЙ------------------------           */
+
 .main-container {
-  min-width: 1197px;
+  width: 1197px;
 }
 
 .header {
@@ -225,6 +230,8 @@ li:hover {
   align-items: center;
 }
 
+/*   ------------------------HOME SELECTION------------------------           */
+
 .home {
   display: flex;
   margin: 100px 0 0 0;
@@ -234,7 +241,7 @@ li:hover {
 .home-container {
   height: 517px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: start;
 }
 
@@ -262,9 +269,10 @@ li:hover {
   display: flex;
   justify-content: space-between;
 }
+
 .home-achievements {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -284,9 +292,11 @@ li:hover {
   justify-content: space-between;
 }
 
+/*   ------------------------ABOUT US SELECTION------------------------           */
+
 .about-us {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -313,10 +323,12 @@ li:hover {
   height: 50px;
 }
 
+/*   ------------------------COLECTION SELECTION------------------------           */
+
 .collection {
   width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -370,6 +382,7 @@ li:hover {
 
 .card {
   padding: 26px;
+  margin-bottom: 15px;
   width: 337px;
   height: 543px;
   background: rgba(255, 255, 255, 0.1);
@@ -377,6 +390,10 @@ li:hover {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .card-description {
@@ -427,4 +444,12 @@ li:hover {
   font-size: 20px;
   line-height: 30px;
   color: rgb(255, 255, 255);
+}
+
+.card_button:hover {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid rgba(103, 26, 228, 1);
+  border-radius: 10px;
 }
