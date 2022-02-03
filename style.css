@@ -2,7 +2,7 @@ body {
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
   display: flex;
   justify-content: center;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -13,7 +13,7 @@ body {
 
 p {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -22,8 +22,8 @@ p {
 }
 
 h1 {
-  margin: 22px 0 0 0;
-  font-family: Poppins;
+  margin-top: 22px;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -34,7 +34,7 @@ h1 {
 h2 {
   /* .section-title */
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -42,11 +42,11 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
-.section-description {
+.section__description {
   margin-top: 10px;
   width: 423px;
   height: 60px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -55,7 +55,7 @@ h2 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.section_container-title {
+.section__container-title {
   margin-top: 200px;
   margin-bottom: 40px;
   width: 100%;
@@ -67,7 +67,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -81,11 +81,11 @@ button {
   cursor: pointer;
 }
 
-.main-button {
+.primary-button {
   border: 1px solid rgba(255, 255, 255, 0);
   width: 171px;
   height: 50px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -98,14 +98,18 @@ button {
   border-radius: 10px;
 }
 
-.main-button:hover {
+.secondary-button_width-161 {
+  width: 161px;
+}
+
+.primary-button:hover {
   border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0);
 }
 
-.standard-button {
+.secondary-button {
   border: 1px solid rgba(255, 255, 255, 0);
   display: flex;
   flex-direction: row;
@@ -114,14 +118,14 @@ button {
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: rgb(255, 255, 255);
 }
 
-.standard-button:hover {
+.secondary-button:hover {
   border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 10px;
@@ -132,7 +136,7 @@ input {
   padding-top: 0;
   border: 0;
   background-color: none;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -147,6 +151,10 @@ ul {
   padding: 0;
   list-style-type: none;
   margin: 0;
+}
+
+li {
+  cursor: pointer;
 }
 
 li:hover {
@@ -168,21 +176,22 @@ li:hover {
   align-items: center;
 }
 
-.header-logo {
-  font-family: Poppins;
+.header__logo {
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
   color: rgb(255, 255, 255);
 }
+
 .color-logo {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.begin-header-container {
+.header__search-container {
   width: 384px;
   height: 50px;
   background: rgba(255, 255, 255, 0.1);
@@ -193,33 +202,33 @@ li:hover {
   align-items: center;
 }
 
-.begin-header-container-search {
-  margin: 0 0 0 8px;
+.search-input {
+  margin-left: 8px;
   width: 292px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 255);
 }
 
-.img-search {
-  margin: 0 0 0 10px;
+.search-img {
+  margin-left: 10px;
   width: 20px;
   height: 20px;
   background-image: url(img/search.svg);
 }
 
-.begin-header-container-search::placeholder {
-  font-family: Poppins;
+.search-input::placeholder {
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.begin-header-navigation {
+.header__navigation {
   margin: 10px;
   width: 520px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -234,34 +243,29 @@ li:hover {
 
 .home {
   display: flex;
-  margin: 100px 0 0 0;
+  margin-top: 100px;
   justify-content: space-between;
 }
 
-.home-container {
+.home__left {
   height: 517px;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
-.home-text {
+.home__left__text {
   margin-top: 10px;
 }
 
-.home-container-button {
+.home__buttons-group {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   width: 298px;
 }
 
-.home-button {
-  width: 161px;
-  height: 50px;
-}
-
-.home-container-achievements {
+.home__left__container {
   margin-left: 2px;
   margin-top: 38px;
   width: 487px;
@@ -270,7 +274,7 @@ li:hover {
   justify-content: space-between;
 }
 
-.home-achievements {
+.home__left__container__achievements {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +284,7 @@ li:hover {
   line-height: 30px;
 }
 
-.home-img {
+.home__right {
   width: 591px;
   height: 517px;
 }
@@ -300,7 +304,7 @@ li:hover {
   align-items: center;
 }
 
-.about-us_content {
+.about-us__content {
   width: 100%;
   height: 600px;
   display: flex;
@@ -308,16 +312,16 @@ li:hover {
   align-items: center;
 }
 
-.about-us_content_container {
+.about-us__content__container {
   width: 588px;
   height: 423px;
 }
 
-.about-us_content_container_text {
+.about-us-text {
   margin-top: 10px;
 }
 
-.about-us_content_container_button {
+.about-us-button {
   margin-top: 30px;
   width: 154px;
   height: 50px;
@@ -344,13 +348,13 @@ li:hover {
   margin-top: 10px;
 }
 
-.collection_container-filter {
+.collection__filters-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.collection-filter {
+.filter-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,7 +363,7 @@ li:hover {
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -367,11 +371,11 @@ li:hover {
   color: rgb(255, 255, 255);
 }
 
-.collection-filter:active {
+.filter-button:active {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
 }
 
-.container-card {
+.section__container-card {
   position: relative;
   margin-top: 30px;
   width: auto;
@@ -390,7 +394,7 @@ li:hover {
   width: 337px;
   height: 543px;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -400,7 +404,7 @@ li:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.card-description {
+.card__description {
   margin: 20px 0 23px;
   width: 100%;
   display: flex;
@@ -419,7 +423,7 @@ li:hover {
   color: rgb(255, 255, 255);
 }
 
-.card-description_right {
+.card__description__right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -437,12 +441,12 @@ li:hover {
   line-height: 22px;
 }
 
-.card_button {
+.card-button {
   width: 337px;
   height: 50px;
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -450,7 +454,7 @@ li:hover {
   color: rgb(255, 255, 255);
 }
 
-.card_button:hover {
+.card-button:hover {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
