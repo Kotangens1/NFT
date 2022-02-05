@@ -43,6 +43,10 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
+h4 {
+  margin: 0;
+}
+
 .section__description {
   margin-top: 10px;
   width: 423px;
@@ -472,4 +476,37 @@ li:hover {
   -webkit-text-fill-color: transparent;
   border: 1px solid rgba(103, 26, 228, 1);
   border-radius: 10px;
+}
+
+.creator__card {
+  position: relative;
+  padding: 0;
+  width: 389px;
+  height: 525px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.card__title {
+  margin-top: 64px;
+}
+
+.card__info {
+  margin: 11px 0 20px 2px;
+  width: 307px;
+  height: 46px;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.card__avatar {
+  position: absolute;
+  top: 216px;
+  left: 145px;
 }
