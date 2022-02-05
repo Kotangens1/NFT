@@ -230,14 +230,14 @@ li:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header__container {
+.header__navigation {
   display: flex;
   width: 521px;
   padding: 0 10px;
   justify-content: space-between;
 }
 
-.header__container__navigation {
+.header__navigation-list {
   width: 310px;
   font-family: Poppins, sans-serif;
   font-style: normal;
