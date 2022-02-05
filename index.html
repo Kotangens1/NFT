@@ -13,55 +13,265 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="begin">
-            <div class="begin-header">
-                <div class="begin-header-logo">Psycho<span class="color-logo">Art</span></div>
-                <div class="begin-header-container">
-                    <img class="img-search" src="img/search.svg" alt="search">
-                    <input class="begin-header-container-search" type="text" placeholder="Search items and collections">
-                </div>                
-                <ul class="begin-header-navigation">
-                    <li>Collections</li>
-                    <li>Feature</li>
-                    <li>FAQ</li>
-                    <button class="main-button">Select Wallet</button>
-                </ul>
+            <header class="header">
+                <p class="header__logo">Psycho<span class="color-logo">Art</span></p>
+                <div class="header__search-container">
+                    <img class="search-img" src="img/search.svg" alt="search">
+                    <input class="search-input" type="text" placeholder="Search items and collections">
+                </div> 
+                <div class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li>Collections</li>
+                        <li>Feature</li>
+                        <li>FAQ</li>
+                    </ul>
+                    <button class="primary-button">Select Wallet</button>
+                </div>               
 
-            </div>
-            <div class="begin-body">
-                <div class="begin-body-container">
-                    <div class="begin-slogan">Create, Sell &<br> Collect Your Own<br> Creative NFT</div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Nunc vulputate libero et velit.</div>
-                    <div class="begin-body-container-button">
-                        <button class="main-button">Explore Now</button>
-                        <button class="standard-button">Sell NFT</button>
+            </header>
+            <section class="home">
+                <div class="home__info">
+                    <h1>Create, Sell &<br> Collect Your Own<br> Creative NFT</h1>
+                    <p class="home-text">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Nunc vulputate libero et velit.</p>
+                    <div class="home__buttons-group">
+                        <button class="primary-button primary-button_width-161">Explore Now</button>
+                        <button class="secondary-button">Sell NFT</button>
                     </div>
-                    <div class="begin-body-container-achievements">
-                        <div class="begin-achievements">
-                            <div class="begin-achievements-title">37k+</div>
-                            <div class="begin-achievements-text text">Artworks</div>
+                    <div class="home__achievements">
+                        <div class="achievements">
+                            <h3>37k+</h3>
+                            <p class="achievements__description">Artworks</p>
                         </div>
-                        <div class="begin-achievements">
-                            <div class="begin-achievements-title">20k+</div>
-                            <div class="begin-achievements-text text">Artists</div>
+                        <div class="achievements">
+                            <h3>20k+</h3>
+                            <p class="achievements__description">Artists</p>
                         </div>
-                        <div class="begin-achievements">
-                            <div class="begin-achievements-title">99k+</div>
-                            <div class="begin-achievements-text text">Aucations</div>
+                        <div class="achievements">
+                            <h3>99k+</h3>
+                            <p class="achievements__description">Aucations</p>
                         </div>
                     </div>
                 </div>
-                <div class="begin-body-img">
-                    <img src="img/heroimage.png" alt="">
+                <div class="home__artworks">
+                    <img src="img/heroimage.png" alt="hero image">
                 </div>
-            </div>
-            <div class="begin-footer">
-                <img src="img/Binance logo.svg" alt="">
-                <img src="img/Ethereum logo.svg" alt="">
-                <img src="img/Blockchain logo.svg" alt="">
-            </div>
-        </div>
+            </section>
+            <section class="sponsors">
+                <img src="img/Binance logo.svg" alt="Binance logo">
+                <img src="img/Ethereum logo.svg" alt="Ethereum logo">
+                <img src="img/Blockchain logo.svg" alt="lockchain logo">
+            </section>
+            <section class="about-us">
+                <div class="section__container-title">
+                    <h2>About Us</h2>
+                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="about-us__content">
+                    <img src="img/about us.png" alt="about us">
+                    <div class="about-us__content__container">
+                        <h3>Get Popular NFT</h3>
+                        <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. </p>
+                        <button class="about-us-button primary-button">Show more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="collection">
+                <div class="section__container-title">
+                    <h2>Collection</h2>
+                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="collection__filters-group">
+                    <button class="filter-button">Art</button>
+                    <button class="filter-button">Sport</button>
+                    <button class="filter-button">Photograpy</button>
+                    <button class="filter-button">Pattern</button>
+                </div>
+                <div class="section__container-card">
+                    <div class="card">
+                        <img src="img/collection1.png" alt="collection1">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection2.png" alt="collection2">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection3.png" alt="collection3">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    
+                    <div class="indent-card"></div>
 
+                    <div class="card">
+                        <img src="img/collection4.png" alt="collection4">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection5.png" alt="collection5">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection6.png" alt="collection6">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+
+                    <div class="indent-card"></div>
+
+                    <div class="card">
+                        <img src="img/collection7.png" alt="collection7">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection8.png" alt="collection8">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection9.png" alt="collection9">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>            
+                
+                </div>
+            </section>
+            <section class="artworks">
+                <div class="section__container-title">
+                    <h2>Featured Artworks</h2>
+                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="section__container-card">
+                    <div class="card">
+                        <img src="img/collection1.png" alt="collection1">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection2.png" alt="collection2">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/collection3.png" alt="collection3">
+                        <div class="card__description">
+                            <div class="card__main-info">
+                                <p class="card__author">@Johny</p>
+                                <p class="card__name">Yellow Painting</p>
+                            </div>
+                            <div class="card__bid-container">
+                                <p class="card__bid">Current Bid</p>
+                                <p class="card__price">0.005 ETH</p>
+                            </div>
+                        </div>
+                        <button class="card__button">Place a bid</button>
+                    </div>              
+                </div>
+            </section>
     </div>
 </body>
 </html>

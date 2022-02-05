@@ -2,45 +2,91 @@ body {
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
   display: flex;
   justify-content: center;
-
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.title {
-  font-family: Poppins;
+/*   ------------------------СТИЛИ ЗАГОЛОВКОВ, ОБЩИХ КНОПОК, ССЫЛОК И ПР------------------------           */
+
+p {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  margin-top: 22px;
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  /* .section-title */
+  margin: 0;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
-.text {
-  font-family: Poppins;
+.section__description {
+  margin-top: 10px;
+  width: 423px;
+  height: 60px;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-
+  line-height: 30px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.section__container-title {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: rgb(255, 255, 255);
 }
 
 button {
   border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-.main-button {
-  border: 1px solid #ffffff00;
+.primary-button {
+  border: 1px solid rgba(255, 255, 255, 0);
   width: 171px;
   height: 50px;
-
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -48,38 +94,44 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-
+  color: rgb(255, 255, 255);
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
 }
-.main-button:hover {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background: rgba(255, 0, 0, 0);
+
+.primary-button_width-161 {
+  width: 161px;
 }
 
-.standard-button {
-  border: 1px solid #ffffff00;
+.primary-button:hover {
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.secondary-button {
+  border: 1px solid rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-
-  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 19px;
+  background: rgba(255, 255, 255, 0);
   border-radius: 10px;
-
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
-.standard-button:hover {
-  border: 1px solid #ffffff;
+
+.secondary-button_width-161 {
+  width: 161px;
+}
+
+.secondary-button:hover {
+  border: 1px solid rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 10px;
   background: rgba(255, 0, 0, 0);
@@ -89,7 +141,7 @@ input {
   padding-top: 0;
   border: 0;
   background-color: none;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -106,152 +158,318 @@ ul {
   margin: 0;
 }
 
+li {
+  cursor: pointer;
+}
+
 li:hover {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/*   ------------------------НАЧАЛО ПЕРСОНАЛЬНЫХ СТИЛЕЙ------------------------           */
+
 .main-container {
-  min-width: 1197px;
+  width: 1197px;
 }
 
-.begin {
-  height: 897px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-
-.begin-header {
+.header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.begin-header-logo {
-  font-family: Poppins;
+.header__logo {
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
-  /* identical to box height */
-
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
+
 .color-logo {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.begin-header-container {
+.header__search-container {
   width: 384px;
   height: 50px;
-
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  color: white;
-
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.begin-header-container-search {
-  margin: 0 0 0 8px;
+.search-input {
+  margin-left: 8px;
   width: 292px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(255, 255, 255);
 }
 
-.img-search {
-  margin: 0 0 0 10px;
+.search-img {
+  margin-left: 10px;
   width: 20px;
   height: 20px;
   background-image: url(img/search.svg);
 }
 
-.begin-header-container-search::placeholder {
-  font-family: Poppins;
+.search-input::placeholder {
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 180%;
-
   color: rgba(255, 255, 255, 0.5);
 }
 
-.begin-header-navigation {
-  margin: 10px;
-  width: 520px;
+.header__navigation {
+  display: flex;
+  width: 521px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
 
-  font-family: Poppins;
+.header__navigation-list {
+  width: 310px;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-
-  color: #ffffff;
-
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.begin-body {
+/*   ------------------------HOME SELECTION------------------------           */
+
+.home {
   display: flex;
-  margin: 0 0 41px 0;
+  margin-top: 111px;
   justify-content: space-between;
 }
 
-.begin-body-container {
-  height: 517px;
+.home__info {
+  height: 457px;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: start;
 }
 
-.begin-slogan {
-  width: 490px;
-  height: 180px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 120%;
-
-  color: #ffffff;
+.home-text {
+  margin-top: 10px;
 }
-.begin-body-container-button {
+
+.home__buttons-group {
+  margin-top: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 298px;
 }
 
-.begin-body-container-achievements {
+.home__achievements {
+  margin-left: 2px;
+  margin-top: 40px;
+  width: 487px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
 }
-.begin-achievements {
+
+.achievements {
   display: flex;
-  height: 75px;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievements__description {
+  margin-top: -1px;
+  line-height: 30px;
+}
+
+.home__artworks {
+  width: 591px;
+  height: 517px;
+}
+
+.sponsors {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*   ------------------------ABOUT US SELECTION------------------------           */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__content {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us__content__container {
+  width: 588px;
+  height: 423px;
+}
+
+.about-us-text {
+  margin-top: 9px;
+}
+
+.about-us-button {
+  margin-top: 30px;
+  width: 154px;
+  height: 50px;
+}
+
+/*   ------------------------COLECTION SELECTION------------------------           */
+
+.collection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection_title {
+  width: 423px;
+  height: 130px;
+  display: flex;
   flex-flow: column;
   align-items: center;
 }
-.begin-achievements-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
+
+.collection_title_text {
+  margin-top: 10px;
 }
 
-.begin-footer {
+.collection__filters-group {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.filter-button:active {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+}
+
+.section__container-card {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.indent-card {
+  width: 100%;
+  height: 15px;
+}
+
+.card {
+  padding: 26px;
+  width: 337px;
+  height: 543px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.card__description {
+  margin: 20px 0 23px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__author {
+  line-height: 30px;
+}
+
+.card__name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.card__bid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card__price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.card__bid {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.card__button {
+  width: 337px;
+  height: 50px;
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.card__button:hover {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid rgba(103, 26, 228, 1);
+  border-radius: 10px;
 }
