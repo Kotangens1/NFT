@@ -23,6 +23,7 @@ p {
 
 h1 {
   margin-top: 22px;
+  margin-bottom: 0;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -98,7 +99,7 @@ button {
   border-radius: 10px;
 }
 
-.secondary-button_width-161 {
+.primary-button_width-161 {
   width: 161px;
 }
 
@@ -110,19 +111,23 @@ button {
 }
 
 .secondary-button {
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 19px;
+  background: rgba(255, 255, 255, 0);
   border-radius: 10px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: rgb(255, 255, 255);
+}
+
+.secondary-button_width-161 {
+  width: 161px;
 }
 
 .secondary-button:hover {
@@ -225,9 +230,15 @@ li:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header__navigation {
-  margin: 10px;
-  width: 520px;
+.header__container {
+  display: flex;
+  width: 521px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.header__container__navigation {
+  width: 310px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -243,48 +254,50 @@ li:hover {
 
 .home {
   display: flex;
-  margin-top: 100px;
+  margin-top: 111px;
   justify-content: space-between;
 }
 
-.home__left {
-  height: 517px;
+.home__info {
+  height: 457px;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
 
-.home__left__text {
+.home-text {
   margin-top: 10px;
 }
 
 .home__buttons-group {
-  margin-top: 30px;
+  margin-top: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 298px;
 }
 
-.home__left__container {
+.home__achievements {
   margin-left: 2px;
-  margin-top: 38px;
+  margin-top: 40px;
   width: 487px;
   height: 75px;
   display: flex;
   justify-content: space-between;
 }
 
-.home__left__container__achievements {
+.achievements {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.home-achievements-description {
+.achievements__description {
+  margin-top: -1px;
   line-height: 30px;
 }
 
-.home__right {
+.home__artworks {
   width: 591px;
   height: 517px;
 }
@@ -318,7 +331,7 @@ li:hover {
 }
 
 .about-us-text {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .about-us-button {
@@ -378,7 +391,6 @@ li:hover {
 .section__container-card {
   position: relative;
   margin-top: 30px;
-  width: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -411,11 +423,11 @@ li:hover {
   justify-content: space-between;
 }
 
-.card-author {
+.card__author {
   line-height: 30px;
 }
 
-.card-name {
+.card__name {
   margin-top: 10px;
   font-weight: bold;
   font-size: 20px;
@@ -423,25 +435,25 @@ li:hover {
   color: rgb(255, 255, 255);
 }
 
-.card__description__right {
+.card__bid-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.card-price {
+.card__price {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   color: rgb(255, 255, 255);
 }
 
-.card-bid {
+.card__bid {
   font-size: 15px;
   line-height: 22px;
 }
 
-.card-button {
+.card__button {
   width: 337px;
   height: 50px;
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
@@ -454,7 +466,7 @@ li:hover {
   color: rgb(255, 255, 255);
 }
 
-.card-button:hover {
+.card__button:hover {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
