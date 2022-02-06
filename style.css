@@ -507,6 +507,5 @@ li:hover {
 
 .card__avatar {
   position: absolute;
-  top: 216px;
-  left: 145px;
+  margin-top: 216px;
 }
