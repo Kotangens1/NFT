@@ -175,7 +175,7 @@ li:hover {
 /*   ------------------------НАЧАЛО ПЕРСОНАЛЬНЫХ СТИЛЕЙ------------------------           */
 
 .main-container {
-  width: 1197px;
+  max-width: 1280px;
 }
 
 .header {
@@ -322,7 +322,7 @@ li:hover {
 }
 
 .about-us__content {
-  width: 100%;
+  margin-bottom: 2px;
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -330,6 +330,7 @@ li:hover {
 }
 
 .about-us__content__container {
+  position: relative;
   width: 588px;
   height: 423px;
 }
@@ -573,4 +574,129 @@ li:hover {
   border: 0;
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 1400px) and (min-width: 768px) {
+  .section__description {
+    width: 520px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__search-container {
+    margin-top: 10px;
+  }
+
+  .header__navigation {
+    margin-top: 10px;
+  }
+
+  .home {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__info {
+    width: 597px;
+  }
+
+  .home__artworks {
+    margin-top: 70px;
+  }
+
+  .sponsors {
+    margin-top: 30px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__content {
+    align-items: stretch;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .about-us__content__container {
+    margin-top: 20px;
+  }
+
+  .collection__filters-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-button {
+    margin: 10px;
+    width: 220px;
+  }
+
+  .section__container-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indent-card {
+    height: 0;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__container-list {
+    margin-bottom: 40px;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .footer__link {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .main-container {
+    max-width: 90%;
+  }
+  body {
+    background: rgb(128, 207, 189);
+    display: flex;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    max-width: 90%;
+  }
+  body {
+    background: rgb(160, 141, 255);
+    display: flex;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
 }
