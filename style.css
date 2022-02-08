@@ -670,33 +670,248 @@ li:hover {
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
-  .main-container {
-    max-width: 90%;
+  .section__description {
+    width: auto;
   }
-  body {
-    background: rgb(128, 207, 189);
+
+  .section__container-title {
+    margin-top: 100px;
+  }
+
+  .main-container {
+    max-width: 480px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__search-container {
+    margin-top: 10px;
+  }
+
+  .header__navigation {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .home {
     display: flex;
-    justify-content: center;
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__info {
+    width: auto;
+  }
+
+  .home__artworks {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .home__artworks__img {
+    width: 480px;
+  }
+
+  .sponsors {
+    margin-top: 100px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__content {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .about-us__content__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .collection__filters-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-button {
+    margin: 10px;
+    width: 220px;
+  }
+
+  .section__container-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indent-card {
+    height: 0;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__container-list {
+    margin-bottom: 40px;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .footer__link {
+    margin-top: 6px;
   }
 }
 
 @media (max-width: 480px) {
+
+  .section__description {
+    width: auto;
+  }
+
+  .section__container-title {
+    margin-top: 100px;
+  }
+
   .main-container {
-    max-width: 90%;
+    max-width: 430px;
   }
-  body {
-    background: rgb(160, 141, 255);
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__search-container {
+    margin-top: 10px;
+  }
+
+  .header__navigation {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 0;
+  }
+
+  .header__navigation-list {
+    margin: 10px 0 10px;
+  }
+
+  .home {
     display: flex;
-    justify-content: center;
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .home__info {
+    width: 394px;
+    height: auto;
+  }
+
+  .home__achievements {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .home__artworks {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .home__artworks__img {
+    width: 410px;
+  }
+
+  .sponsors {
+    margin-top: 100px;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__content {
+    width: 390px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .about-us__content__img {
+    width: 390px;
+  }
+
+  .about-us__content__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+
+  .collection__filters-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-button {
+    margin: 10px;
+    width: 220px;
+  }
+
+  .section__container-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indent-card {
+    height: 0;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__container-list {
+    margin-bottom: 40px;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .footer__link {
+    margin-top: 6px;
+  }
+}
 }
