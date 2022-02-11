@@ -323,6 +323,7 @@ li:hover {
 
 .about-us__content {
   margin-bottom: 2px;
+  width: 1196px;
   height: 600px;
   display: flex;
   justify-content: space-between;
@@ -618,6 +619,7 @@ li:hover {
 
   .about-us__content {
     align-items: stretch;
+    width: auto;
     height: auto;
     flex-direction: column;
   }
@@ -715,7 +717,7 @@ li:hover {
     height: auto;
   }
 
-  .home__artworks__img {
+  .artworks__img {
     width: 480px;
   }
 
@@ -728,6 +730,7 @@ li:hover {
 
   .about-us__content {
     height: auto;
+    width:auto;
     flex-direction: column;
   }
 
@@ -842,7 +845,7 @@ li:hover {
     height: auto;
   }
 
-  .home__artworks__img {
+  .artworks__img {
     width: 410px;
   }
 
